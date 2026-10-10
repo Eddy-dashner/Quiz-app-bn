@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/src/index.js",
-    "dev": "nodemon --exec ts-node src/index.ts",
+    "start": "node api.js && node dist/src/index.js",
+    "dev": "node api.js && nodemon --exec ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -30,5 +30,5 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "mongoose": "^7.4.3"
-    }
+  }
 }
